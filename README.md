@@ -9,7 +9,6 @@ $$\min_{x=(x_1,x_2),x_1\in \mathbb{R}^{n_1}, x_2\in \mathbb{R}^{n_2}} c^{\top} x
 
 where $\mathcal{K}_G$ is a closed convex cone, and $\mathcal{K}_x$ is a closed convex set.
 
-The algorithm is described in the following paper:
 
 
 ### Features
