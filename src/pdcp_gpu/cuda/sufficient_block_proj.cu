@@ -1253,7 +1253,7 @@ sufficient_block_proj(double* arr, double* bl, double* bu, double* D_scaled, dou
     // all threads for positive projection
     long n = ns[0];
     double *sol = arr + gpu_head_start[0];
-    for (int i = global_thread_idx; i < n; i += total_thread){
+    for (int i = global_thread_idx; i < n; i += total_threads){
       sol[i] = fmax(sol[i], 0.0);
     }
   }
@@ -1269,11 +1269,10 @@ sufficient_block_proj(double* arr, double* bl, double* bu, double* D_scaled, dou
     // all threads for positive projection
     long n = ns[2];
     double *sol = arr + gpu_head_start[2];
-    for (int i = global_thread_idx; i < n; i += total_thread){
+    for (int i = global_thread_idx; i < n; i += total_threads){
       sol[i] = fmax(sol[i], 0.0);
     }
   }
-
   // simple_proj(arr, bl, bu, D_scaled, D_scaled_squared, D_scaled_mul_x, temp, t_warm_start, gpu_head_start, ns, blkNum, proj_type, abs_tol, rel_tol, global_thread_idx, total_threads);
 
   // one thread per cone projection

@@ -1,5 +1,5 @@
 using Pkg
-Pkg.activate("test_env")
+Pkg.activate("pdcp_env")
 include("../src/pdcp_gpu/PDCP_GPU.jl")
 include("../src/pdcp_cpu/PDCP_CPU.jl")
 using .PDCP_GPU
@@ -7,7 +7,6 @@ using .PDCP_CPU
 using LinearAlgebra
 using JuMP
 using Random, SparseArrays
-using SCS
 import MathOptInterface as MOI
 rng = Random.MersenneTwister(2)
 basedim = Int64(100)
