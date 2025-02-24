@@ -658,7 +658,7 @@ function MOI.optimize!(
             objective_constant = objective_constant,
         )
     else
-        sol_res = RPDHG_CLP_GPU.rpdhg_gpu_solve(
+        sol_res = PDCP_GPU.rpdhg_gpu_solve(
             n = A.n,
             m = A.m,
             nb = A.n,
