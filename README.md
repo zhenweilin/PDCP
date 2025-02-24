@@ -7,7 +7,7 @@ This project implements the algorithm for solving conic optimization problems of
 
 $$\min_{x=(x_1,x_2),x_1\in \mathbb{R}^{n_1}, x_2\in \mathbb{R}^{n_2}} c^{\top} x\ \  \text{s.t.} Gx-h\in \mathcal{K}_G, l\leq x_1\leq u, x_2 \in \mathcal{K}_x,$$
 
-where $\mathcal{K}_G$ is a closed convex cone, and $\mathcal{K}_x$ is a closed convex set.
+where $\mathcal{K}_G$ is a closed convex cone, and $\mathcal{K}_x$ is a closed convex cone.
 
 
 
