@@ -48,14 +48,7 @@ Three criteria are considered for the performance:
 - Objective value accuracy: $\frac{|c^{\top}x-(y^{\top}h+l^{\top}\lambda_{1}^{+}+u^{\top}\lambda_{1}^{-})|}{1+\max\{|c^{\top}x|, |y^{\top}h+l^{\top}\lambda_{1}^{+}+u^{\top}\lambda_{1}^{-}|\}}$
 
 where $\lambda=c-G^{\top}y=[\lambda_{1}^{\top},\lambda_{2}^{\top}]^{\top},\lambda_1\in \Lambda_1 \subseteq \mathbb{R}^{n_1}, \lambda_2\in \mathbb{R}^{n_2}$, and 
-$$
-\Lambda_1 = \begin{cases}
-0, & \text{if } l_i = -\infty \text{ and } u_i = +\infty, \\
-\mathbb{R}^-, & \text{if } l_i = -\infty \text{ and } u_i \in \mathbb{R}, \\
-\mathbb{R}^+, & \text{if } l_i \in \mathbb{R} \text{ and } u_i = +\infty, \\
-\mathbb{R}, & \text{otherwise.}
-\end{cases}
-$$
+![](https://latex.codecogs.com/svg.image?$\Lambda_{1}=\begin{cases}0&\text{if}l_{i}=-\infty,\,u_{i}=&plus;\infty,\\[5pt]\mathbb{R}^{-}&\text{if}l_{i}=-\infty,\,u_{i}\in\mathbb{R},\\[5pt]\mathbb{R}^{&plus;}&\text{if}l_{i}\in\mathbb{R},\,u_{i}=&plus;\infty,\\[5pt]\mathbb{R}&\text{otherwise}\end{cases}$)
 
 
 ##### CBLIB dataset
