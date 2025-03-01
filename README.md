@@ -48,12 +48,15 @@ Three criteria are considered for the performance:
 - Objective value accuracy: $\frac{|c^{\top}x-(y^{\top}h+l^{\top}\lambda_{1}^{+}+u^{\top}\lambda_{1}^{-})|}{1+\max\{|c^{\top}x|, |y^{\top}h+l^{\top}\lambda_{1}^{+}+u^{\top}\lambda_{1}^{-}|\}}$
 
 where $\lambda=c-G^{\top}y=[\lambda_{1}^{\top},\lambda_{2}^{\top}]^{\top},\lambda_1\in \Lambda_1 \subseteq \mathbb{R}^{n_1}, \lambda_2\in \mathbb{R}^{n_2}$, and 
-$\Lambda_{1}=\begin{cases}
-    \\{0\\} & l_{i}=-\infty,u_{i}=+\infty\\\\[0.1em]
-    \mathbb{R}^{-} & l_{i}=-\infty,u_{i}\in\mathbb{R}\\\\[0.1em]
-    \mathbb{R}^{+} & l_{i}\in\mathbb{R},u_{i}=+\infty\\\\[0.1em]
-    \mathbb{R} & \text{otherwise}
-\end{cases}$
+$$
+\Lambda_1 = \begin{cases}
+0, & \text{if } l_i = -\infty \text{ and } u_i = +\infty, \\
+\mathbb{R}^-, & \text{if } l_i = -\infty \text{ and } u_i \in \mathbb{R}, \\
+\mathbb{R}^+, & \text{if } l_i \in \mathbb{R} \text{ and } u_i = +\infty, \\
+\mathbb{R}, & \text{otherwise.}
+\end{cases}
+$$
+
 
 ##### CBLIB dataset
 CBLIB is a classical [dataset collection](https://cblib.zib.de/download/all/) for testing conic programming, which includes some mixed-integer conic programming problems. Through a relaxation process, these mixed-integer conic constraints are transformed into continuous constraints, resulting in a refined dataset of 1943 problems without exponential cone constraints and 205 problems with such constraints. We employed the COPT solver to presolve all datasets.
