@@ -48,10 +48,10 @@ Three criteria are considered for the performance:
 - Objective value accuracy: $\frac{|c^{\top}x-(y^{\top}h+l^{\top}\lambda_{1}^{+}+u^{\top}\lambda_{1}^{-})|}{1+\max\{|c^{\top}x|, |y^{\top}h+l^{\top}\lambda_{1}^{+}+u^{\top}\lambda_{1}^{-}|\}}$
 
 where $\lambda=c-G^{\top}y=[\lambda_{1}^{\top},\lambda_{2}^{\top}]^{\top},\lambda_1\in \Lambda_1 \subseteq \mathbb{R}^{n_1}, \lambda_2\in \mathbb{R}^{n_2}$, and 
- $\Lambda_{1}=\begin{cases}
-    \{0\} & l_{i}=-\infty,u_{i}=+\infty\\
-    \mathbb{R}^{-} & l_{i}=-\infty,u_{i}\in\mathbb{R}\\
-    \mathbb{R}^{+} & l_{i}\in\mathbb{R},u_{i}=+\infty\\
+$\Lambda_{1}=\begin{cases}
+    \\{0\\} & l_{i}=-\infty,u_{i}=+\infty\\\\
+    \mathbb{R}^{-} & l_{i}=-\infty,u_{i}\in\mathbb{R}\\\\
+    \mathbb{R}^{+} & l_{i}\in\mathbb{R},u_{i}=+\infty\\\\
     \mathbb{R} & \text{otherwise}
 \end{cases}$
 
