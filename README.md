@@ -5,7 +5,7 @@ Primal Dual Algorithm for Conic Programming
 ### Overview
 This project implements the algorithm for solving conic optimization problems of the form:
 
-$$\min_{x=(x_1,x_2),x_1\in \mathbb{R}^{n_1}, x_2\in \mathbb{R}^{n_2}} c^{\top} x\ \  \text{s.t.} Gx-h\in \mathcal{K}_G, l\leq x_1\leq u, x_2 \in \mathcal{K}_x,$$
+$$\min_{x=(x_1,x_2),x_1\in \mathbb{R}^{n_1}, x_2\in \mathbb{R}^{n_2}} c^{\top} x\ \  \text{s.t.} Gx-h\in \mathcal{K}_d, l\leq x_1\leq u, x_2 \in \mathcal{K}_p,$$
 
 where $\mathcal{K}_G$ is a closed convex cone, and $\mathcal{K}_x$ is a closed convex cone.
 
