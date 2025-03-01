@@ -115,17 +115,15 @@ $$
 | PDCP(GPU) $10^{-6}$ | 1.1E-01 | 2.4E-01 | 5.3E-01 | 1.5E-01 | 3.6E-01 | 6.1E-01 | 2.1E-01 | 5.9E-01 | 8.4E-01 | 1.4E+00 | 2.6E+01 | 5.6E+01 | 7.5E+00 | 8.0E+01 | 2.6E+02 | 1.3E+01 | 2.6E+02 | 5.2E+02 | 6.0E+02 |
 
 ### Multi-peroid Portfolio Optimization
-$$
-\begin{aligned}
-\max_{w_{\tau+1},\tau=0,\ldots,T-1} & \sum_{\tau=0}^{T-1}\hat{r}_{\tau}^\top w_{\tau+1} \\
-\text{subject to} \quad & \mathbf{1}^\top(w_{\tau+1}-w_{\tau})=0, \quad \forall\tau=0,\ldots,T-1, \\
-& w_{\tau}\geq0, \quad \forall\tau=0,\ldots,T-1, \\
-& (\hat{w}_{\tau}^{m}\hat{\Sigma}_{\tau})(w_{\tau+1})=0, \quad \forall\tau=0,\ldots,T-1, \\
-& \|{\hat{\Sigma}_{\tau+1}^{1/2}(w_{\tau+1}-w_{b})}\|\leq\gamma_{1\tau}, \quad \forall\tau=0,\ldots,T-1, \\
-& -\gamma_{2\tau,i}\leq(w_{\tau+1}-w_{\tau})_{i}\leq\gamma_{2\tau,i}, \quad \forall\tau=0,\ldots,T-1,i=1,\ldots,N+1, \\
+$$\begin{aligned}
+\max_{w_{\tau+1},\tau=0,\ldots,T-1} & \sum_{\tau=0}^{T-1}\hat{r}_{\tau}^\top w_{\tau+1} \\\\
+\text{subject to} \quad & \mathbf{1}^\top(w_{\tau+1}-w_{\tau})=0, \quad \forall\tau=0,\ldots,T-1, \\\\
+& w_{\tau}\geq0, \quad \forall\tau=0,\ldots,T-1, \\\\
+& (\hat{w}_{\tau}^{m}\hat{\Sigma}_{\tau})(w_{\tau+1})=0, \quad \forall\tau=0,\ldots,T-1, \\\\
+& \|\hat{\Sigma}_{\tau+1}^{1/2}(w_{\tau+1}-w_{b})\|\leq\gamma_{1\tau}, \quad \forall\tau=0,\ldots,T-1, \\\\
+& -\gamma_{2\tau,i}\leq(w_{\tau+1}-w_{\tau})_{i}\leq\gamma_{2\tau,i}, \quad \forall\tau=0,\ldots,T-1,i=1,\ldots,N+1, \\\\
 & -\gamma_{3\tau}\leq\sum_{i=1}^{N}\hat{\Sigma}_{ii}^{1/2}(w_{\tau+1}-w_{b})_{i}\leq\gamma_{3\tau}, \quad \forall\tau=0,\ldots,T-1
-\end{aligned}
-$$
+\end{aligned}$$
 
 ### Multi-period Portfolio Optimization Results
 
