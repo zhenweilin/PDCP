@@ -53,4 +53,7 @@ where $\lambda=c-G^{\top}y=[\lambda_{1}^{\top},\lambda_{2}^{\top}]^{\top},\lambd
 
 
 ### Citation
-- Coming soon.
+- Lin Zhenwei and Zikai Xiong. (2025). zhenweilin/PDCP: v1.0 (v1.0). Zenodo. https://doi.org/10.5281/zenodo.14954645
+
+### Paper
+- Coming soon
