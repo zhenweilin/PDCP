@@ -22,7 +22,7 @@ where $\mathcal{K}_G$ is a closed convex cone, and $\mathcal{K}_x$ is a closed c
 git clone https://github.com/zhenweilin/PDCP.git
 cd PDCP
 cd src/pdcp_gpu/cuda
-make # compile the cuda code
+make # compile the cuda code, default ARCH = sm_90, if necessary please modify makefile
 cd ../../..
 ```
 
